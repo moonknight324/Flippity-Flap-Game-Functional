@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+</head>
+<body>
+    <div class="content">
+        <div class="row">
+            <label for="username" class="yourname"><b>Your name: </b></label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="row">
+            <label for="nickname" class="nick-name"><b>Nickname: </b></label>
+            <input type="text" id="nickname" required>
+        </div>
+        <div class="rules">          
+                <h1 class="how-to-play">How to Play?</h1>
+                <p class="points">
+                    1. Clear as many hurdles as possible. <br>
+                    2. You have 120 seconds. Good luck!
+                </p>
+        </div>
+        <div id="play">
+            <button id="play-btn"><h1>Let's go Fly!</h1></button>
+        </div>
+    </div>
+<script>
+    const play =  document.getElementById("play-btn");
+    play.onclick = () => {
+        location.href = "./game.html";
+    };
+</script>
+<script src="index.js"></script>
+</body>
+</html>

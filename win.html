@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Yay!! 🥳 </title>
+</head>
+<body>
+    <div class="result1">
+        <h1>Yay! You won the game.</h1>
+    </div>
+    <div class="score">Score: <span id="score1">0</span></div>
+    <img src="assets/blue flappy bird.webp" height="80px" width="120px" class="bluebird" alt="">
+    <br>
+    <button id="play-again"><h1>Let's Play Again!</h1></button>
+    <h1 class="creator">Made with💙 by Manya Jain</h1>
+<script>
+        const playAgain = document.getElementById("play-again");
+        playAgain.onclick = () => {
+            location.href = "./game.html";
+        };
+
+        const bgMusic = new Audio("./assets/wonsound.mp3");
+        bgMusic.play();
+        bgMusic.loop = false;
+</script>
+<script src="win.js"></script>
+</body>
+</html>

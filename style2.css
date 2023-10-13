@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("assets/flippity\ bg\ image.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: absolute;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+.score{
+    border: none;
+    border-radius: 20px;
+    font-size: 40px;
+    background-color: #AEE2F9;
+    height: 50px;
+    padding: 7px;
+    width: 190px;
+    text-align: center;
+    /* margin:top right bottom left; */
+    margin: 50px 0 50px 44vw;
+}
+.bluebird{
+    margin: 0 0 50px 50px;
+}
+.result1, .result2{
+    font-weight: bold;
+    font-size: 40px;
+}
+#play-again, #try-again{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #FAD26C;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.creator{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 55px;
+}
+@media (max-width:630px) {
+
+    .result{
+        font-size: 25px;
+    }
+    #play-again, #try-again{
+        font-size: 15px;
+    }
+    body{
+        margin-top: 80px;
+    }
+}

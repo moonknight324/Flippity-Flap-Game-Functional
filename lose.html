@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uh-oh 🥺</title>
+</head>
+<body>
+    <div class="result2"><h1>You lost :( !</h1></div>
+    <div class="score">Score: <span id="score1">0</span></div>
+    <img src="assets/blue flappy bird.webp" height="80px" width="120px" class="bluebird" alt="">
+    <br>
+    <button id="try-again"><h1>I'll try again...</h1></button>
+    <h1 class="creator">Made with💙 by Manya Jain</h1>
+<script>
+    const tryAgain = document.getElementById("try-again");
+    tryAgain.onclick = () => {
+        location.href = "./game.html";
+    };
+
+    const bgSound = new Audio("./assets/gameover.wav");
+    bgSound.play();
+    bgSound.loop = false;
+
+</script>
+<script src="lose.js"></script>
+
+</body>
+</html>

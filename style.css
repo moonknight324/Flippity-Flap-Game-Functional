@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;  
+}
+body {
+    background-image: url('assets/Untitled.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;  
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.content{
+    margin-top: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+#username, #nickname{
+    border: none;
+    border-radius: 20px;
+    background-color: #AEE2F9;
+    font-size: 32px;
+    font-style: semi-bold italic;
+    padding: 7px;
+    box-shadow: 3px 3px;
+    margin-left: 7px;
+    width: 450px;
+}
+.yourname, .nick-name{
+    border: none;
+    border-radius: 20px;
+    background-color: #AEE2F9;
+    padding: 7px;
+    margin-right: 7px;
+    font-size: 36px;
+    font-style: italic;
+    box-shadow: 3px 3px;
+}
+.rules{
+    border: none;
+    border-radius: 20px;
+    background-color: #AEE2F9;
+    height: 26vh;
+    width: 400px;
+    margin-top: 40px;
+    box-shadow: 4px 4px;
+    text-align: center;
+}
+.how-to-play{
+    font-size: 36px;
+    font-style: italic;
+}
+.points{
+    font-size: 30px;
+    font-style: medium italic;
+}
+#play-btn{
+    border: none;
+    background-color: #FAD26C;
+    border-radius: 20px;
+    font-style: italic;
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+@media(max-width:630px) {
+    #username, #nickname{
+        font-size: 30px;
+        width: 200px;
+    }
+    .yourname, .nick-name{
+        font-size: 30px;
+    }
+    .rules{
+        margin-left: 40px;
+    }
+    #play-btn{
+        font-size: 15px;
+    }
+    .how-to-play{
+        font-size: 32px;
+    }
+    .points{
+        font-size: 28px;
+    }
+}
